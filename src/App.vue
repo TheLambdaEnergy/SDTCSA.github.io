@@ -1,6 +1,6 @@
 <template>
-  <UnderConstruction />
-  <div class="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
+  <UnderConstruction v-if="showUnderConstruction" @close="showUnderConstruction = false" />
+  <div v-else class="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
     <!-- 顶部导航 -->
     <header class="sticky top-0 z-20 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur transition-colors duration-300">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
@@ -211,6 +211,7 @@ const scrollTo = (id: string) => {
 // Season Effect Logic
 const isSeasonEffectActive = ref(true);
 const seasonalEffectsRef = ref<InstanceType<typeof SeasonalEffects> | null>(null);
+const showUnderConstruction = ref(true);
 
 const currentSeason = computed(() => {
     return seasonalEffectsRef.value?.currentSeason || 'spring';

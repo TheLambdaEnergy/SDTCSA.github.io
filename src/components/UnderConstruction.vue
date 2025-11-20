@@ -25,9 +25,18 @@
         网站正在进行幻想乡化改造，请稍后再来探索。
       </p>
       
-      <div class="flex gap-2 items-center text-sm text-slate-400 dark:text-slate-500 font-mono">
-        <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
-        <span>Building Resources...</span>
+      <div class="flex flex-col items-center gap-4">
+        <div class="flex gap-2 items-center text-sm text-slate-400 dark:text-slate-500 font-mono">
+          <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+          <span>Building Resources...</span>
+        </div>
+
+        <button 
+          @click="$emit('close')"
+          class="mt-4 px-6 py-2 rounded-full bg-white/50 dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm transition-all hover:scale-105 hover:shadow-lg backdrop-blur-sm"
+        >
+          瞄一眼？
+        </button>
       </div>
     </div>
     
@@ -40,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-// No logic needed for static overlay
+defineEmits(['close']);
 </script>
 
 <style scoped>
