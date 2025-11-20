@@ -23,9 +23,9 @@ const universities: University[] = [
   },
   {
     id: 2,
-    name: '山东大学（威海）（）',
+    name: '山东大学（威海）（可用）',
     logo: '/logos/sduwh.png',
-    contact: { qqGroup: '908978336（测试用）', description: '山东大学（威海）东方同好会' }
+    contact: { qqGroup: '908978336（可用）', description: '山东大学（威海）东方同好会' }
   },
   {
     id: 3,
