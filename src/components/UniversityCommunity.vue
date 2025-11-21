@@ -75,6 +75,12 @@ const universities: University[] = [
     name: '齐鲁理工学院',
     logo: '/logos/qiot.png',
     contact: { qqGroup: '1011030824' }
+  },
+  {
+    id: 11,
+    name: '中国石油大学（华东）',
+    logo: '/logos/UPC.png',
+    contact: { qqGroup: '631941461' }
   }
 ];
 
