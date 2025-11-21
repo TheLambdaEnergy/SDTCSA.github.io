@@ -159,8 +159,8 @@ const events = ref<TouhouEvent[]>([
     date: '12月',
     location: '济南',
     status: '筹备中',
-    image: 'https://via.placeholder.com/600x338/38bdf8/ffffff?text=SDTCSA+Meeting',
-    description: '山东东方高校联合会12月例会。\n\n联系群：977015593',
+    image: 'https://via.placeholder.com/600x848/f472b6/ffffff?text=Poster+Coming+Soon',
+    description: '山东东方高校联合会12月例会。\n\n群聊：977015593',
     link: 'https://qm.qq.com/q/977015593'
   },
   {
@@ -169,8 +169,8 @@ const events = ref<TouhouEvent[]>([
     date: '1月27-28日',
     location: '济南',
     status: '筹备中',
-    image: 'https://via.placeholder.com/600x338/f472b6/ffffff?text=Jinan+Event',
-    description: '济南绊月花田岁华逐宴。\n\n联系群：981769085',
+    image: '/posters/byht.jpeg',
+    description: '济南绊月花田岁华逐宴。\n\n群聊：981769085',
     link: 'https://qm.qq.com/q/981769085'
   },
   {
@@ -179,8 +179,8 @@ const events = ref<TouhouEvent[]>([
     date: '2月',
     location: '泰安',
     status: '筹备中',
-    image: 'https://via.placeholder.com/600x338/34d399/ffffff?text=Taian+THP',
-    description: '泰安东方Project Only聚会。\n\n联系群：1057613342',
+    image: '/posters/tathp.jpg',
+    description: '泰安东方Project Only聚会。\n\n群聊：1057613342',
     link: 'https://qm.qq.com/q/1057613342'
   },
   {
@@ -189,7 +189,7 @@ const events = ref<TouhouEvent[]>([
     date: '2月10-11日',
     location: '聊城东昌府',
     status: '筹备中',
-    image: 'https://via.placeholder.com/600x338/fbbf24/ffffff?text=Liaocheng+Event',
+    image: '/posters/dfsly.jpg',
     description: '东方霜林宴in聊城东昌府。\n\n联系群：184537740',
     link: 'https://qm.qq.com/q/184537740'
   },
@@ -199,7 +199,7 @@ const events = ref<TouhouEvent[]>([
     date: '2月22日',
     location: '济宁',
     status: '筹备中',
-    image: 'https://via.placeholder.com/600x338/a78bfa/ffffff?text=Jining+THP',
+    image: 'https://via.placeholder.com/600x848/f472b6/ffffff?text=Poster+Coming+Soon',
     description: '济宁东方Project Only聚会。\n\n联系群：907803271',
     link: 'https://qm.qq.com/q/907803271'
   },
@@ -209,7 +209,7 @@ const events = ref<TouhouEvent[]>([
     date: '暑假',
     location: '枣庄',
     status: '筹备中',
-    image: 'https://via.placeholder.com/600x338/f87171/ffffff?text=Zaozhuang+THP',
+    image: 'https://via.placeholder.com/600x848/f472b6/ffffff?text=Poster+Coming+Soon',
     description: '枣庄东方Project Only聚会。\n\n联系群：1064395892',
     link: 'https://qm.qq.com/q/1064395892'
   },
