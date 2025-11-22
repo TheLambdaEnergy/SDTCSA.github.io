@@ -84,60 +84,66 @@ const universities: University[] = [
   },
   {
     id: 12,
+    name: 'xxxxx',
+    logo: '/logos/xxx.webp',
+    contact: { qqGroup: 'xxxx' ,description:'xxxxx'}
+  },
+  {
+    id: 13,
     name: '山东石油化工学院',
     logo: '/logos/sdipct.webp',
     contact: { qqGroup: '644182264' }
   },
   {
-    id: 13,
+    id: 14,
     name: '济南大学',
     logo: '/logos/ujn.webp',
     contact: { qqGroup: '856370052' }
   },
   {
-    id: 14,
+    id: 15,
     name: '枣庄学院',
     logo: '/logos/uzz.webp',
     contact: { qqGroup: '852282759' }
   },
   {
-    id: 15,
+    id: 16,
     name: '东营科技职业学院',
     logo: '/logos/dykj.webp',
     contact: { qqGroup: '644182264' }
   },
   {
-    id: 16,
+    id: 17,
     name: '聊城大学',
     logo: '/logos/lcu.webp',
     contact: { qqGroup: '514756242' }
   },
   {
-    id: 17,
+    id: 18,
     name: '烟台大学',
     logo: '/logos/ytu.webp',
     contact: { qqGroup: '1007450236' }
   },
   {
-    id: 18,
+    id: 19,
     name: '齐鲁理工学院',
     logo: '/logos/qiot.webp',
     contact: { qqGroup: '1011030824' }
   },
   {
-    id: 19,
+    id: 20,
     name: '枣庄职业学院',
     logo: '/logos/zvc.webp',
     contact: { qqGroup: '1020621071' }
   },
   {
-    id: 20,
+    id: 21,
     name: '青岛农业大学',
     logo: '/logos/qau.webp',
     contact: { qqGroup: '815491041' }
   },
   {
-    id: 21,
+    id: 22,
     name: '添加你的学校',
     logo: '/logos/more.webp',
     contact: { qqGroup: '977015593', description: '请加入山高联群聊私信管理员添加' }
