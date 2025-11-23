@@ -20,7 +20,7 @@ const universities: University[] = [
     id: 1,
     name: '山东大学',
     logo: '/logos/sdu.webp',
-    contact: { qqGroup: '186295950', description: '★山东大学♪幻想浮世伊行★' }
+    contact: { qqGroup: '186295950', description: '★山东大学♪幻想浮世伊行★  \n 蓬莱清辉学海浮幻想，灵山风起浩然行世伊' }
   },
   {
     id: 2,
@@ -116,7 +116,7 @@ const universities: University[] = [
     id: 17,
     name: '东营科技职业学院',
     logo: '/logos/dykj.webp',
-    contact: { qqGroup: '644182264' }
+    contact: { qqGroup: '112864654' }
   },
   {
     id: 18,
@@ -315,7 +315,7 @@ const handleClick = (e: MouseEvent, uni: University) => {
             
             <div class="space-y-5 text-slate-600 dark:text-slate-300">
               <div v-if="selectedUniversity?.contact.description" class="bg-slate-50 dark:bg-slate-800/50 p-3 rounded-lg border border-slate-200 dark:border-slate-700/50">
-                 <p class="text-sm leading-relaxed">{{ selectedUniversity.contact.description }}</p>
+                 <p class="text-sm leading-relaxed whitespace-pre-wrap">{{ selectedUniversity.contact.description }}</p>
               </div>
               
               <div class="space-y-3">
