@@ -287,13 +287,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, computed } from 'vue';
-import UniversityCommunity from './components/UniversityCommunity.vue';
-import SeasonalEffects from './components/SeasonalEffects.vue';
-import UnderConstruction from './components/UnderConstruction.vue';
-
-import TouhouEvents from './components/TouhouEvents.vue';
+import { ref, onMounted, onUnmounted, computed, defineAsyncComponent } from 'vue';
 import { resolveImage } from './utils/image';
+
+// Async components for better performance
+const UniversityCommunity = defineAsyncComponent(() => import('./components/UniversityCommunity.vue'));
+const SeasonalEffects = defineAsyncComponent(() => import('./components/SeasonalEffects.vue'));
+const UnderConstruction = defineAsyncComponent(() => import('./components/UnderConstruction.vue'));
+const TouhouEvents = defineAsyncComponent(() => import('./components/TouhouEvents.vue'));
 
 const scrollTo = (id: string) => {
   const el = document.getElementById(id)
