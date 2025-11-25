@@ -1,6 +1,14 @@
 <template>
   <UnderConstruction v-if="showUnderConstruction" @close="showUnderConstruction = false" />
-  <div v-else class="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
+  <ClickSpark 
+    v-else 
+    class="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300 block"
+    sparkColor="#3b82f6"
+    :sparkSize="12"
+    :sparkRadius="20"
+    :sparkCount="8"
+    :duration="400"
+  >
     <!-- 顶部导航 -->
     <header class="sticky top-0 z-20 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur transition-colors duration-300">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
@@ -87,13 +95,26 @@
             >
               查看当前活动
             </a>
-            <a
-              href="https://qm.qq.com/q/YEk0Cahfmo"
-              class="rounded border border-slate-300 dark:border-slate-700 px-4 py-2 font-medium text-slate-700 dark:text-slate-100 transition hover:border-slate-400 dark:hover:border-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800/50"
+            <ClickSpark
+              sparkColor="#ef4444"
+              :sparkSize="10"
+              :sparkRadius="15"
+              :sparkCount="8"
+              :duration="400"
+              :preventBubble="true"
+              class="inline-flex"
             >
-              加入我们
-
-            </a>
+              <StarBorder
+                as="a"
+                href="https://qm.qq.com/q/YEk0Cahfmo"
+                class="cursor-pointer"
+                className="rounded bg-white dark:bg-slate-900 px-4 py-2 font-medium text-slate-700 dark:text-slate-100 transition hover:bg-slate-50 dark:hover:bg-slate-800"
+                color="cyan"
+                speed="5s"
+              >
+                加入我们
+              </StarBorder>
+            </ClickSpark>
           </div>
 
           <div class="mt-6 flex flex-wrap gap-4 text-[11px] text-slate-500 dark:text-slate-400">
@@ -148,6 +169,21 @@
           </aside>
         </div>
       </section>
+
+      <!-- Logo Loop -->
+      <div class="w-full -mt-10 mb-10 overflow-hidden">
+        <LogoLoop
+          :logos="universityLogos"
+          :speed="50"
+          direction="left"
+          :logoHeight="64"
+          :gap="60"
+          :pauseOnHover="true"
+          :scaleOnHover="true"
+          :fadeOut="true"
+          class="transition-all duration-500"
+        />
+      </div>
 
       <!-- 东方活动 -->
       <TouhouEvents />
@@ -283,12 +319,15 @@
         </div>
       </div>
     </footer>
-  </div>
+  </ClickSpark>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed, defineAsyncComponent } from 'vue';
 import { resolveImage } from './utils/image';
+import LogoLoop from '@/components/LogoLoop.vue';
+import ClickSpark from '@/components/ClickSpark.vue';
+import StarBorder from '@/components/StarBorder.vue';
 
 // Async components for better performance
 const UniversityCommunity = defineAsyncComponent(() => import('./components/UniversityCommunity.vue'));
@@ -348,6 +387,33 @@ onMounted(() => {
     mouseY.value = rect.height / 2;
   }
 });
+
+const universityLogos = [
+  { src: resolveImage('/logos/sdu.webp'), alt: '山东大学', title: '山东大学' },
+  { src: resolveImage('/logos/sduwh.webp'), alt: '山东大学（威海）', title: '山东大学（威海）' },
+  { src: resolveImage('/logos/sdut.webp'), alt: '山东理工大学', title: '山东理工大学' },
+  { src: resolveImage('/logos/sdutcm.webp'), alt: '山东中医药大学', title: '山东中医药大学' },
+  { src: resolveImage('/logos/sdjzu.webp'), alt: '山东建筑大学', title: '山东建筑大学' },
+  { src: resolveImage('/logos/sdpei.webp'), alt: '山东体育学院', title: '山东体育学院' },
+  { src: resolveImage('/logos/sdjtu.webp'), alt: '山东交通学院', title: '山东交通学院' },
+  { src: resolveImage('/logos/sdyu.webp'), alt: '山东青年政治学院', title: '山东青年政治学院' },
+  { src: resolveImage('/logos/sdnu.webp'), alt: '山东师范大学', title: '山东师范大学' },
+  { src: resolveImage('/logos/smu.webp'), alt: '山东管理学院', title: '山东管理学院' },
+  { src: resolveImage('/logos/qlu.webp'), alt: '齐鲁工业大学', title: '齐鲁工业大学' },
+  { src: resolveImage('/logos/sdca.webp'), alt: '山东艺术学院', title: '山东艺术学院' },
+  { src: resolveImage('/logos/UPC.webp'), alt: '中国石油大学（华东）', title: '中国石油大学（华东）' },
+  { src: resolveImage('/logos/hitwith.webp'), alt: '哈尔滨工业大学（威海）', title: '哈尔滨工业大学（威海）' },
+  { src: resolveImage('/logos/sdipct.webp'), alt: '山东石油化工学院', title: '山东石油化工学院' },
+  { src: resolveImage('/logos/ujn.webp'), alt: '济南大学', title: '济南大学' },
+  { src: resolveImage('/logos/uzz.webp'), alt: '枣庄学院', title: '枣庄学院' },
+  { src: resolveImage('/logos/dykj.webp'), alt: '东营科技职业学院', title: '东营科技职业学院' },
+  { src: resolveImage('/logos/lcu.webp'), alt: '聊城大学', title: '聊城大学' },
+  { src: resolveImage('/logos/ytu.webp'), alt: '烟台大学', title: '烟台大学' },
+  { src: resolveImage('/logos/ldu.webp'), alt: '鲁东大学', title: '鲁东大学' },
+  { src: resolveImage('/logos/qiot.webp'), alt: '齐鲁理工学院', title: '齐鲁理工学院' },
+  { src: resolveImage('/logos/zvc.webp'), alt: '枣庄职业学院', title: '枣庄职业学院' },
+  { src: resolveImage('/logos/qau.webp'), alt: '青岛农业大学', title: '青岛农业大学' },
+];
 </script>
 
 <style scoped>
