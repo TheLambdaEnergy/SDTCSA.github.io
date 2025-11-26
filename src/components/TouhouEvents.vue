@@ -203,7 +203,7 @@ const events = ref<TouhouEvent[]>([
     date: '2月22日',
     location: '济宁',
     status: '筹备中',
-    image: 'https://via.placeholder.com/600x848/f472b6/ffffff?text=Poster+Coming+Soon',
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
     description: '济宁东方Project Only聚会。\n\n联系群：907803271',
     link: 'https://qm.qq.com/q/907803271'
   },
@@ -213,7 +213,7 @@ const events = ref<TouhouEvent[]>([
     date: '暑假',
     location: '枣庄',
     status: '筹备中',
-    image: 'https://via.placeholder.com/600x848/f472b6/ffffff?text=Poster+Coming+Soon',
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
     description: '枣庄东方Project Only聚会。\n\n联系群：1064395892',
     link: 'https://qm.qq.com/q/1064395892'
   },
@@ -224,7 +224,7 @@ const events = ref<TouhouEvent[]>([
     date: '待定',
     location: '青岛',
     status: '待定',
-    image: 'https://via.placeholder.com/600x338/94a3b8/ffffff?text=Qingdao+THO',
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
     description: '琴岛东方Project Only展会（筹备中）。\n\n联系群：574073900',
     link: 'https://qm.qq.com/q/574073900'
   },
@@ -234,7 +234,7 @@ const events = ref<TouhouEvent[]>([
     date: '待定',
     location: '山东',
     status: '待定',
-    image: 'https://via.placeholder.com/600x338/94a3b8/ffffff?text=Shandong+THO',
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
     description: '山东东方Project Only展会（筹备中）。\n\n联系群：856223214',
     link: 'https://qm.qq.com/q/856223214'
   },
@@ -244,7 +244,7 @@ const events = ref<TouhouEvent[]>([
     date: '待定',
     location: '烟台',
     status: '待定',
-    image: 'https://via.placeholder.com/600x338/94a3b8/ffffff?text=Yantai+THO',
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
     description: '烟台东方Project Only展会（筹备中）。\n\n联系群：526544033',
     link: 'https://qm.qq.com/q/526544033'
   },
@@ -254,7 +254,7 @@ const events = ref<TouhouEvent[]>([
     date: '待定',
     location: '威海',
     status: '待定',
-    image: 'https://via.placeholder.com/600x338/94a3b8/ffffff?text=Weihai+THP',
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
     description: '威海东方Project Only聚会（筹备中）。\n\n联系群：915438943',
     link: 'https://qm.qq.com/q/915438943'
   },
@@ -264,7 +264,7 @@ const events = ref<TouhouEvent[]>([
     date: '待定',
     location: '临沂',
     status: '待定',
-    image: 'https://via.placeholder.com/600x338/94a3b8/ffffff?text=Linyi+THP',
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
     description: '临沂东方Project Only聚会（筹备中）。\n\n联系群：720728319',
     link: 'https://qm.qq.com/q/720728319'
   },
@@ -274,7 +274,7 @@ const events = ref<TouhouEvent[]>([
     date: '待定',
     location: '日照',
     status: '待定',
-    image: 'https://via.placeholder.com/600x338/94a3b8/ffffff?text=Rizhao+THP',
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
     description: '日照东方Project Only聚会（筹备中）。\n\n联系群：926445614',
     link: 'https://qm.qq.com/q/926445614'
   },
@@ -284,7 +284,7 @@ const events = ref<TouhouEvent[]>([
     date: '待定',
     location: '淄博',
     status: '待定',
-    image: 'https://via.placeholder.com/600x338/94a3b8/ffffff?text=Zibo+THP',
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
     description: '淄博东方Project Only聚会（筹备中）。\n\n联系群：1145635997',
     link: 'https://qm.qq.com/q/1145635997'
   }
