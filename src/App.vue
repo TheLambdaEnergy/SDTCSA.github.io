@@ -9,6 +9,7 @@
     :sparkCount="8"
     :duration="400"
   >
+    <TicketModal @navigate="handleTicketNavigate" />
     <!-- 顶部导航 -->
     <header class="sticky top-0 z-20 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur transition-colors duration-300">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
@@ -186,7 +187,7 @@
       </div>
 
       <!-- 东方活动 -->
-      <TouhouEvents />
+      <TouhouEvents ref="touhouEventsRef" />
 
       <!-- 高校社群 -->
       <UniversityCommunity id="college" />
@@ -328,6 +329,7 @@ import { resolveImage } from './utils/image';
 import LogoLoop from '@/components/LogoLoop.vue';
 import ClickSpark from '@/components/ClickSpark.vue';
 import StarBorder from '@/components/StarBorder.vue';
+import TicketModal from '@/components/TicketModal.vue';
 
 // Async components for better performance
 const UniversityCommunity = defineAsyncComponent(() => import('./components/UniversityCommunity.vue'));
@@ -335,11 +337,23 @@ const SeasonalEffects = defineAsyncComponent(() => import('./components/Seasonal
 const UnderConstruction = defineAsyncComponent(() => import('./components/UnderConstruction.vue'));
 const TouhouEvents = defineAsyncComponent(() => import('./components/TouhouEvents.vue'));
 
+const touhouEventsRef = ref<InstanceType<typeof TouhouEvents> | null>(null);
+
 const scrollTo = (id: string) => {
   const el = document.getElementById(id)
   if (!el) return
   el.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
+
+const handleTicketNavigate = () => {
+  scrollTo('event');
+  // Wait for scroll to finish a bit
+  setTimeout(() => {
+    if (touhouEventsRef.value) {
+      touhouEventsRef.value.openEventById(1); // ID 1 is the December meeting
+    }
+  }, 800);
+};
 
 // Season Effect Logic
 const isSeasonEffectActive = ref(true);

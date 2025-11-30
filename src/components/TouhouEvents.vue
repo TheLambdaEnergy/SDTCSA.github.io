@@ -122,7 +122,7 @@
                 @click="openLink(selectedEvent.link)"
                 class="rounded-lg bg-sky-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-sky-700 dark:bg-sky-500 dark:hover:bg-sky-400"
               >
-                了解详情
+                了解详情/点击购票
               </button>
               <button 
                 @click="closeEvent"
@@ -328,4 +328,16 @@ const getStatusClass = (status: string) => {
 const openLink = (url: string) => {
   window.open(url, '_blank');
 };
+
+// Expose method for parent component
+const openEventById = (id: number) => {
+  const event = events.value.find(e => e.id === id);
+  if (event) {
+    openEvent(event);
+  }
+};
+
+defineExpose({
+  openEventById
+});
 </script>
