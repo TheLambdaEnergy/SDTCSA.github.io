@@ -186,11 +186,11 @@
         />
       </div>
 
-      <!-- 东方活动 -->
-      <TouhouEvents ref="touhouEventsRef" />
-
       <!-- 高校社群 -->
       <UniversityCommunity id="college" />
+
+      <!-- 东方活动 -->
+      <TouhouEvents ref="touhouEventsRef" />
 
       <!-- 关于项目 -->
       <section id="about" class="space-y-4">
@@ -233,18 +233,18 @@
       <!-- 加入我们 (Refactored) -->
       <section 
         id="joinus" 
-        class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-600 via-purple-600 to-pink-600 bg-[length:400%_400%] animate-gradient-flow p-8 md:p-16 text-center text-white shadow-2xl"
+        class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-600 via-red-600 to-yellow-600 bg-[length:400%_400%] animate-gradient-flow p-8 md:p-16 text-center text-white shadow-2xl"
       >
         <!-- Decorative Circles (CSS only) -->
         <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-red-500/40 blur-3xl animate-blob mix-blend-overlay"></div>
         <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-white/20 blur-3xl animate-blob [animation-delay:2000ms] mix-blend-overlay"></div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-yellow-400/30 blur-3xl animate-blob [animation-delay:4000ms] -z-10"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-yellow-400/30 blur-3xl animate-blob [animation-delay:100ms] -z-10"></div>
 
         <div class="relative z-10 flex flex-col items-center gap-10">
           <div class="max-w-2xl">
             <h2 class="text-3xl font-bold tracking-tight md:text-4xl">加入我们</h2>
             <p class="mt-4 text-lg text-sky-100">
-              无论你是刚入坑的新人，还是资深的东方众，在这里都能找到志同道合的伙伴。
+              让我们一起连接山东高校，将对东方的爱传递下去！
             </p>
           </div>
 

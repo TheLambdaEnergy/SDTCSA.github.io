@@ -2,9 +2,9 @@
   <section id="event" class="scroll-mt-20">
     <div class="mb-8 flex items-center justify-between">
       <div>
-        <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-50">山东省内东方活动</h2>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-50">山东省内高校联合活动</h2>
         <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
-          探索山东各地的东方Project相关展会、聚会与活动（统计截止：10月28日）
+          探索山东各地的高校东方Project聚会与活动（仅用于活动存档，地方性活动非山高连主办或参与）
         </p>
       </div>
     </div>
@@ -122,7 +122,7 @@
                 @click="openLink(selectedEvent.link)"
                 class="rounded-lg bg-sky-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-sky-700 dark:bg-sky-500 dark:hover:bg-sky-400"
               >
-                了解详情/点击购票
+                了解详情/购票
               </button>
               <button 
                 @click="closeEvent"
@@ -164,129 +164,8 @@ const events = ref<TouhouEvent[]>([
     location: '济南',
     status: '已结束',
     image: '/posters/qlhj.webp',
-    description: '山东东方高校联合会12月例会。\n\n群聊：977015593',
+    description: '山东东方高校联合会12月例会。\n群聊：977015593 \n 活动视频：\n东方赛马：https://www.bilibili.com/video/BV1jhB7BzEoo/\n[自由舞台]月兔DJ：https://www.bilibili.com/video/BV184BEBwEVK',
     link: 'https://touhou.market/main/events/320'
-  },
-  {
-    id: 2,
-    title: '济南绊月花田岁华逐宴',
-    date: '1月27-28日',
-    location: '济南',
-    status: '筹备中',
-    image: '/posters/byht.webp',
-    description: '济南绊月花田岁华逐宴。\n\n群聊：981769085',
-    link: 'https://qm.qq.com/q/981769085'
-  },
-  {
-    id: 3,
-    title: '泰安THP',
-    date: '2月',
-    location: '泰安',
-    status: '筹备中',
-    image: '/posters/tathp.webp',
-    description: '泰安东方Project Only聚会。\n\n群聊：1057613342',
-    link: 'https://qm.qq.com/q/1057613342'
-  },
-  {
-    id: 4,
-    title: '东方霜林宴in聊城东昌府',
-    date: '2月10-11日',
-    location: '聊城东昌府',
-    status: '筹备中',
-    image: '/posters/dfsly.webp',
-    description: '东方霜林宴in聊城东昌府。\n\n联系群：184537740',
-    link: 'https://qm.qq.com/q/184537740'
-  },
-  {
-    id: 5,
-    title: '济宁THP',
-    date: '2月22日',
-    location: '济宁',
-    status: '筹备中',
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
-    description: '济宁东方Project Only聚会。\n\n联系群：907803271',
-    link: 'https://qm.qq.com/q/907803271'
-  },
-  {
-    id: 6,
-    title: '枣庄THP',
-    date: '暑假',
-    location: '枣庄',
-    status: '筹备中',
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
-    description: '枣庄东方Project Only聚会。\n\n联系群：1064395892',
-    link: 'https://qm.qq.com/q/1064395892'
-  },
-  // 未宣发定档
-  {
-    id: 7,
-    title: '琴岛THO',
-    date: '待定',
-    location: '青岛',
-    status: '待定',
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
-    description: '琴岛东方Project Only展会（筹备中）。\n\n联系群：574073900',
-    link: 'https://qm.qq.com/q/574073900'
-  },
-  {
-    id: 8,
-    title: '山东THO',
-    date: '待定',
-    location: '山东',
-    status: '待定',
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
-    description: '山东东方Project Only展会（筹备中）。\n\n联系群：856223214',
-    link: 'https://qm.qq.com/q/856223214'
-  },
-  {
-    id: 9,
-    title: '烟台THO',
-    date: '待定',
-    location: '烟台',
-    status: '待定',
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
-    description: '烟台东方Project Only展会（筹备中）。\n\n联系群：526544033',
-    link: 'https://qm.qq.com/q/526544033'
-  },
-  {
-    id: 10,
-    title: '威海THP',
-    date: '待定',
-    location: '威海',
-    status: '待定',
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
-    description: '威海东方Project Only聚会（筹备中）。\n\n联系群：915438943',
-    link: 'https://qm.qq.com/q/915438943'
-  },
-  {
-    id: 11,
-    title: '临沂THP',
-    date: '待定',
-    location: '临沂',
-    status: '待定',
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
-    description: '临沂东方Project Only聚会（筹备中）。\n\n联系群：720728319',
-    link: 'https://qm.qq.com/q/720728319'
-  },
-  {
-    id: 12,
-    title: '日照THP',
-    date: '待定',
-    location: '日照',
-    status: '待定',
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
-    description: '日照东方Project Only聚会（筹备中）。\n\n联系群：926445614',
-    link: 'https://qm.qq.com/q/926445614'
-  },
-  {
-    id: 13,
-    title: '淄博THP',
-    date: '待定',
-    location: '淄博',
-    status: '待定',
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f1f5f9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2394a3b8'%3EPoster Coming Soon%3C/text%3E%3C/svg%3E",
-    description: '淄博东方Project Only聚会（筹备中）。\n\n联系群：1145635997',
-    link: 'https://qm.qq.com/q/1145635997'
   }
 ]);
 

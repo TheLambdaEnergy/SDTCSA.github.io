@@ -236,7 +236,7 @@ const handleClick = (e: MouseEvent, uni: University) => {
       <h2 class="text-3xl md:text-4xl font-bold text-sky-700 dark:text-sky-400 inline-block">
         高校社群
       </h2>
-      <p class="mt-4 text-slate-500 dark:text-slate-400">目前已提供校徽和群号的社群，若想加入请单击获取详细联系方式</p>
+      <p class="mt-4 text-slate-500 dark:text-slate-400">目前已提供校徽和群号的社群，若想加入请单击获取详细联系方式（仅提供信息，以下大学信息与山高连无关）</p>
     </div>
     
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 px-6 max-w-7xl mx-auto">
